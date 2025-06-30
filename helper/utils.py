@@ -8,11 +8,12 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 async def progress_for_pyrogram(current, total, ud_type, message, start):
     now = time.time()
     diff = now - start
-    if round(diff % 5.00) == 0 or current == total:        
+    # Update progress every 3 seconds or when completed for better performance
+    if round(diff % 3.00) == 0 or current == total:        
         percentage = current * 100 / total
-        speed = current / diff
+        speed = current / diff if diff > 0 else 0
         elapsed_time = round(diff) * 1000
-        time_to_completion = round((total - current) / speed) * 1000
+        time_to_completion = round((total - current) / speed) * 1000 if speed > 0 else 0
         estimated_total_time = elapsed_time + time_to_completion
 
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
@@ -34,7 +35,9 @@ async def progress_for_pyrogram(current, total, ud_type, message, start):
                 text=f"{ud_type}\n\n{tmp}",               
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("✖️ 𝖢𝖺𝗇𝖼𝖾𝗅 ✖️", callback_data="close")]])                                               
             )
-        except:
+        except Exception as e:
+            # Handle potential errors during progress updates
+            print(f"Progress update failed: {e}")
             pass
 
 def humanbytes(size):    
