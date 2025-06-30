@@ -33,18 +33,26 @@ class Bot(Client):
         print(f"{me.first_name} Is Started.....✨️")
         for id in Config.ADMIN:
             try: 
-                await self.send_message(id, f"**{me.first_name}  Is Started...**")                                
+                # First check if we can get the chat
+                chat = await self.get_chat(id)
+                await self.send_message(id, f"**{me.first_name}  Is Started...**")
+                print(f"✅ Successfully sent start message to admin {id}")                                
             except Exception as e:
-                print(f"Failed to send start message to admin {id}: {e}")
+                print(f"❌ Failed to send start message to admin {id}: {e}")
+                print(f"   This usually means the bot hasn't received a message from user {id} yet.")
         
         if Config.LOG_CHANNEL:
             try:
+                # First check if we can access the channel
+                chat = await self.get_chat(Config.LOG_CHANNEL)
                 curr = datetime.now(timezone("Asia/Kolkata"))
                 date = curr.strftime('%d %B, %Y')
                 time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v1.0 (Layer {layer})`")                                
+                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v1.0 (Layer {layer})`")
+                print(f"✅ Successfully sent restart message to log channel {Config.LOG_CHANNEL}")                                
             except Exception as e:
-                print(f"Failed to send restart message to log channel: {e}")
+                print(f"❌ Failed to send restart message to log channel {Config.LOG_CHANNEL}: {e}")
+                print(f"   Make sure the bot is added to the channel and has proper permissions.")
 
 bot = Bot()
 

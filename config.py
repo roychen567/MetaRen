@@ -75,8 +75,8 @@ class Txt(object):
 
 🗑️ <b><u>Chat Management</u></b>
 
-➪ /clear - Clear all messages in private chat (Private chats only)
-➪ /clear_bot - Clear only bot messages in groups (Admin only)
+➪ /clear - Clear accessible bot messages in private chat (Limited by bot permissions)
+➪ /clear_bot - Clear recent bot messages in groups (Admin only, limited scope)
 
 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MB_Owner>Developer</a>
 """
