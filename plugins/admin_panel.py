@@ -35,7 +35,7 @@ async def restart_bot(bot, message):
         os.execl(sys.executable, sys.executable, *sys.argv)
     except Exception as e:
         print(f"Restart failed: {e}")
-        await message.reply(f"❌ Restart failed: {str(e)}")ble, *sys.argv)
+        await message.reply(f"❌ Restart failed: {str(e)}")
 
 
 
