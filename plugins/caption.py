@@ -33,7 +33,6 @@ async def see_caption(client, message):
 
 
 
-# Jishu Developer 
+# MB Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @JishuBotz
-# Developer @JishuDeveloper
+# Developer @MB_Owner
