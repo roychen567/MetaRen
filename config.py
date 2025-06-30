@@ -71,7 +71,12 @@ class Txt(object):
 
 ✏️ <b><u>How To Rename A File</u></b>
 
-➪ Send Any File And Type New File Name And Select The Format [ Document, Video, Audio ].           
+➪ Send Any File And Type New File Name And Select The Format [ Document, Video, Audio ].
+
+🗑️ <b><u>Chat Management</u></b>
+
+➪ /clear - Clear all messages in private chat (Private chats only)
+➪ /clear_bot - Clear only bot messages in groups (Admin only)
 
 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MB_Owner>Developer</a>
 """
