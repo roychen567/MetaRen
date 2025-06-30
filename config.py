@@ -7,11 +7,11 @@ id_pattern = re.compile(r'^\d+$')
 
 class Config(object):
     # Pyrogram client config
-    API_ID = os.environ.get("API_ID", "20581507")
-    API_HASH = os.environ.get("API_HASH", "60ee9616e45c8a8a429fd8390b53fe74")
+    API_ID = os.environ.get("API_ID", "20348828")
+    API_HASH = os.environ.get("API_HASH", "45468c907786a257cf69b0f9f299ceed")
     
     # Fixing BOT_TOKENS extraction from environment
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7035835268:AAHZfWaCKiAR81QjN1U-hKtBpP11Pk3midE")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7616029539:AAEV4pV8DjIUnAhdbyZ-o2-YsfKE4gIFAhM")
 
     # Database config
     DB_NAME = os.environ.get("DB_NAME", "test")
