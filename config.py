@@ -14,18 +14,18 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7616029539:AAEV4pV8DjIUnAhdbyZ-o2-YsfKE4gIFAhM")
 
     # Database config
-    DB_NAME = os.environ.get("DB_NAME", "test")
-    DB_URL = os.environ.get("DB_URL", "mongodb+srv://mavi:mavi@cluster0.g5gbgkz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+    DB_NAME = os.environ.get("DB_NAME", "Renamer")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://Ben:Ben@renamer.zzwxl4a.mongodb.net/?retryWrites=true&w=majority&appName=Renamer")
 
     # Other configs
     BOT_UPTIME = time.time()
-    GLOBAL_THUMBNAIL_URL = os.environ.get("GLOBAL_THUMBNAIL_URL", "https://i.postimg.cc/ZRRrhLkj/IMG-20241209-204819-543.jpg")
+    GLOBAL_THUMBNAIL_URL = os.environ.get("GLOBAL_THUMBNAIL_URL", "https://envs.sh/uhd.jpg")
     START_PIC = os.environ.get("START_PIC", "")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '2126131508').split()]
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1380904444').split()]
 
     # Channels logs
-    FORCE_SUB = os.environ.get("FORCE_SUB", "")
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002130121487"))
+    FORCE_SUB = os.environ.get("FORCE_SUB", "-1002279143939")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002884217125"))
 
     # Webhook response configuration     
     WEBHOOK = bool(int(os.environ.get("WEBHOOK", True)))
@@ -42,17 +42,12 @@ class Txt(object):
 
 ➻ This Bot Also Supports Custom Thumbnail And Custom Caption.
 
-<b>Bot Is Made By :</b> @Madflix_Bots"""
+<b>Bot Is Made By :</b> @MB_Owner"""
 
     ABOUT_TXT = """
 ╭───────────────⍟
 ├<b>🤖 My Name</b> : {}
-├<b>🖥️ Developer</b> : <a href=https://t.me/Madflix_Bots>Madflix Botz</a> 
-├<b>👨‍💻 Programer</b> : <a href=https://t.me/MadflixOfficials>Jishu Developer</a>
-├<b>📕 Library</b> : <a href=https://github.com/pyrogram>Pyrogram</a>
-├<b>✏️ Language</b> : <a href=https://www.python.org>Python 3</a>
-├<b>💾 Database</b> : <a href=https://cloud.mongodb.com>Mongo DB</a>
-├<b>📊 Build Version</b> : <a href=https://instagram.com/jishu.editz>Rename v4.5.0</a></b>     
+├<b>🖥️ Developer</b> : <a href=https://t.me/MB_Owner>ᴍᴏᴠɪᴇ ʙᴀᴢᴀʀ ᴏᴡɴᴇʀ</a>   
 ╰───────────────⍟
 """
 
@@ -78,7 +73,7 @@ class Txt(object):
 
 ➪ Send Any File And Type New File Name And Select The Format [ Document, Video, Audio ].           
 
-𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MadflixOfficials>Developer</a>
+𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/MB_Owner>Developer</a>
 """
 
     PROGRESS_BAR = """\n
@@ -93,10 +88,9 @@ class Txt(object):
 
 If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upto Your Choice.
 
-<b>🛍 UPI ID:</b> `madflixofficial@axl`
+<b>🛍 UPI ID:</b> `robertdowny810@okhdfcbank`
 """
 
-# Jishu Developer 
+# MB Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @JishuBotz
-# Developer @JishuDeveloper
+# Developer @MB_Owner
