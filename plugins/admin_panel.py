@@ -98,7 +98,6 @@ async def send_msg(user_id, message):
 
 
 
-# Jishu Developer 
+# MB Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @JishuBotz
-# Developer @JishuDeveloper
+# Developer @MB_Owner
