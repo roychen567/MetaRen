@@ -20,7 +20,7 @@ async def start(client, message):
     if Config.START_PIC:
         await message.reply_photo(Config.START_PIC, caption=Txt.START_TXT.format(user.mention), reply_markup=button)       
     else:
-        await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button)p=button, disable_web_page_preview=True)
+        await message.reply_text(text=Txt.START_TXT.format(user.mention), reply_markup=button, disable_web_page_preview=True)
    
 
 @Client.on_callback_query()
@@ -63,17 +63,6 @@ async def cb_handler(client, query: CallbackQuery):
         except:
             await query.message.delete()
             await query.message.continue_propagation()
-                [InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")]
-            ])            
-        )
-    elif data == "close":
-        try:
-            await query.message.delete()
-            await query.message.reply_to_message.delete()
-            await query.message.continue_propagation()
-        except:
-            await query.message.delete()
-            await query.message.continue_propagation()
 
 
 
@@ -85,7 +74,7 @@ async def donate(client, message):
 	keybord = InlineKeyboardMarkup([
         			[InlineKeyboardButton("🦋 Admin",url = "https://t.me/MB_Owner"), 
         			InlineKeyboardButton("✖️ Close",callback_data = "close") ]])
-	await message.reply_text(text=text, disable_web_page_preview=True, reply_markup=keybord)ge.reply_text(text = text,reply_markup = keybord)
+	await message.reply_text(text=text, disable_web_page_preview=True, reply_markup=keybord)
 
 
 
