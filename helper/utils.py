@@ -118,7 +118,6 @@ def makedir(name: str):
 
 
 
-# Jishu Developer 
+# MB Developer 
 # Don't Remove Credit 🥺
-# Telegram Channel @JishuBotz
-# Developer @JishuDeveloper
+# Developer @MB_Owner
