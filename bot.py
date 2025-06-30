@@ -18,7 +18,6 @@ class Bot(Client):
             workers=200,
             plugins={"root": "plugins"},
             sleep_threshold=15,
-            max_concurrent_transmissions=10,  # Increased for better performance
         )
 
     async def start(self):
